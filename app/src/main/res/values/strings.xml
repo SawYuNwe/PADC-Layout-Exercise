@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PADC Layout</string>
+    <string name="action_settings">Settings</string>
+    <string name="book_title">Do it yourself PC upgrade</string>
+    <string name="book_author">Guy Hard-Davis</string>
+    <string name="book_price">12000ks</string>
+    <string name="summary">Summary</string>
+    <string name="story_detail">NOW YOU SEE ME pits an elite FBI squad in a game of cat and mouse against \"The Four Horsemen\", a super-team of the world\'s greatest illusionists. \"The Four Horsemen\" pull off a series of daring heists against corrupt business leaders during their performances, showering the stolen profits on their audiences while staying one step ahead of the law.</string>
+    <string name="greeting_message">Good Morning, Saw Yu</string>
+    <string name="show_stories">Here are your top stories for the day</string>
+    <string name="news_title">China Has Higt-Performing Companies- It Just Needs a Lot More of Them</string>
+    <string name="profile_name">Saw Yu Nwe</string>
+</resources>

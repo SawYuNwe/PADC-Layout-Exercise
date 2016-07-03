@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#eeeeee"
+   >
+    <ImageView
+        android:id="@+id/img_movie"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/now_you_see_me"/>
+
+    <TextView
+        android:id="@+id/tv_movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now You See Me 2 (3D)"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/img_movie"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btn_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAILS"
+        android:layout_toRightOf="@id/img_movie"
+        android:layout_below="@id/tv_movie_name"/>
+
+    <ImageButton
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share"
+        android:layout_toRightOf="@id/btn_details"
+        android:layout_below="@id/tv_movie_name"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/about_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_below="@id/img_movie">
+
+        <TextView
+            android:id="@+id/tv_story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Story"
+            android:padding="8dp"
+            android:textSize="20dp"
+
+           />
+
+        <TextView
+            android:id="@+id/tv_story_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story_detail"
+android:layout_margin="8dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_see_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More"
+   android:layout_margin="8dp"
+            android:textColor="#1b5e20"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cinema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        android:layout_below="@id/about_movie">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now Showing In"
+            android:textSize="20dp"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cinema_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie Planet"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:id="@+id/cinema_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pyin Oo Lwin"
+                android:layout_margin="4dp"
+                android:layout_below="@id/cinema_name"/>
+
+            <TextView
+                android:id="@+id/cinema_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00 AM, 12:30 AM"
+                android:layout_margin="4dp"
+                android:layout_below="@id/cinema_location"/>
+
+
+
+            <ImageButton
+                android:id="@+id/btn_cinema_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                android:layout_toLeftOf="@+id/btn_cinema_phone"
+
+                />
+
+            <ImageButton
+                android:id="@+d/btn_cinema_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

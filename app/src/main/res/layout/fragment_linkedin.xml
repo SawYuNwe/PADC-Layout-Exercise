@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LinkedInFragment"
+    android:background="#e0e0e0"
+
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tree"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_setting"
+        android:padding="16dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imageView" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        android:id="@+id/layout_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tv_profile_addition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="YIT(Yangon Institute of Techonology)"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_profile_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stutdent"
+            android:layout_marginBottom="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/tv_profile_addition"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_name"
+            android:layout_marginBottom="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/tv_profile_job"
+            android:textSize="20dp"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="8dp"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/background_profile"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:id="@+id/layout_view_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:columnCount="2"
+        android:layout_margin="8dp"
+        android:layout_below="@id/layout_profile"
+        android:layout_centerHorizontal="true"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_view_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="37"
+            android:textSize="22dp"
+            android:textColor="#2e7d32"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+           />
+
+
+
+        <TextView
+            android:id="@+id/tv_view_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="0"
+            android:textSize="22dp"
+            android:textColor="#2e7d32"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="who is view your profile"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="who is share your profile"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"/>
+
+
+
+
+
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        android:id="@+id/layout_strengthen_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_view_info"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tv_strenghten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strengthen your profile"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/txt_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Showcase what you know, and suggest skills to your profile"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@+id/img_android"
+            android:layout_below="@id/tv_strenghten"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+
+        <ImageView
+            android:id="@+id/img_android"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/android"
+            android:layout_below="@id/tv_strenghten"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="4dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
